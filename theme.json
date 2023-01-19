@@ -138,6 +138,56 @@
 				{
 					"fontFace": [
 						{
+							"fontFamily": "Anton",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/anton/anton-v23-latin-regular.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Anton\", sans-serif",
+					"name": "Anton",
+					"slug": "anton"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Barlow Condensed",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/barlow-condensed/barlow-condensed-v12-latin-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Barlow Condensed",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/barlow-condensed/barlow-condensed-v12-latin-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Barlow Condensed",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/barlow-condensed/barlow-condensed-v12-latin-700.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Barlow Condensed\", sans-serif",
+					"name": "Barlow Condensed",
+					"slug": "barlow-condensed"
+				},
+				{
+					"fontFace": [
+						{
 							"fontFamily": "DM Sans",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
