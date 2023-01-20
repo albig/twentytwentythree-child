@@ -71,14 +71,9 @@
 					"slug": "secondary"
 				},
 				{
-					"color": "#FB326B",
+					"color": "#626262",
 					"name": "Tertiary",
 					"slug": "tertiary"
-				},
-				{
-					"color": "#716f6f",
-					"name": "Farbe 1",
-					"slug": "custom-farbe-1"
 				}
 			]
 		},
@@ -368,7 +363,7 @@
 					"link": {
 						":active": {
 							"color": {
-								"text": "var(--wp--preset--color--secondary)"
+								"text": "var(--wp--preset--color--tertiary)"
 							},
 							"typography": {
 								"textDecoration": "none"
@@ -395,7 +390,7 @@
 					"link": {
 						":active": {
 							"color": {
-								"text": "var(--wp--preset--color--secondary)"
+								"text": "var(--wp--preset--color--tertiary)"
 							},
 							"typography": {
 								"textDecoration": "none"
@@ -469,9 +464,14 @@
 					"color": "var(--wp--preset--color--primary)"
 				}
 			},
+			"core/image": {
+				"color": {
+					"text": "var(--wp--preset--color--tertiary)"
+				}
+			},
 			"core/media-text": {
 				"color": {
-					"text": "var:preset|color|custom-farbe-1"
+					"text": "var(--wp--preset--color--tertiary)"
 				},
 				"elements": {
 					"link": {
@@ -758,7 +758,7 @@
 		},
 		"color": {
 			"background": "var:preset|color|contrast",
-			"text": "var:preset|color|custom-farbe-1"
+			"text": "var(--wp--preset--color--tertiary)"
 		},
 		"elements": {
 			"button": {
@@ -766,21 +766,21 @@
 					"color": {
 						"background": "var(--wp--preset--color--primary)",
 						"gradient": "none",
-						"text": "var(--wp--preset--color--secondary)"
+						"text": "var(--wp--preset--color--tertiary)"
 					}
 				},
 				":focus": {
 					"color": {
 						"background": "var(--wp--preset--color--primary)",
 						"gradient": "none",
-						"text": "var(--wp--preset--color--secondary)"
+						"text": "var(--wp--preset--color--tertiary)"
 					}
 				},
 				":hover": {
 					"color": {
 						"background": "var(--wp--preset--color--primary)",
 						"gradient": "none",
-						"text": "var(--wp--preset--color--secondary)"
+						"text": "var(--wp--preset--color--tertiary)"
 					}
 				},
 				":visited": {
@@ -869,7 +869,7 @@
 					}
 				},
 				"color": {
-					"text": "var:preset|color|custom-farbe-1"
+					"text": "var(--wp--preset--color--tertiary)"
 				},
 				"typography": {
 					"fontFamily": "\"Barlow Condensed\", sans-serif",
