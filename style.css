@@ -58,6 +58,11 @@
     padding-right: 20px;
 }
 
+/* remove white border from submenu */
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+    border: none;
+}
+
 #imPageToTop {
     display: none;
     position: fixed;
