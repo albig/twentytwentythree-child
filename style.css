@@ -80,3 +80,27 @@
 footer {
     background-color: var(--wp--preset--color--base)
 }
+
+/* we do not want the capitalize styling of the original theme */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: none;
+}
+
+/* event styling */
+.em.em-list .em-item .em-item-info h3.em-item-title a {
+    color: var(--wp--preset--color--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.em.em-list .em-item .em-item-info .em-item-meta {
+    padding-top: 20px;
+}
+
+.em.em-list .em-item .em-item-info .em-item-desc {
+    font-size: 80%;
+}
+
+.em.em-list .em-item .em-item-info .em-item-meta > div {
+    flex: none;
+}
