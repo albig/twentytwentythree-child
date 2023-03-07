@@ -26,6 +26,15 @@
     }
 }
 
+/* try a sticky footer */
+main {
+    min-height: calc(100vh - 70px);
+}
+footer {
+    height: 50px;
+}
+
+
 .wp-block-site-tagline {
 	position: relative;
 	top: 20px;
@@ -103,4 +112,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .em.em-list .em-item .em-item-info .em-item-meta > div {
     flex: none;
+}
+
+/* make images in kalender list view a little smaller */
+.em.em-item .em-item-image img,
+.em.em-list .em-item .em-item-image img {
+    width: 80%;
+    padding: 0 10px 0 30px;
+}
+
+/* make pagination a bit nicer */
+.em .em-pagination {
+    --color: var(--wp--preset--color--primary);
+    --color-hover: var(--wp--preset--color--primary);
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.em .em-pagination .page-numbers {
+    font-size: unset;
+    height: unset;
+}
+.em .em-pagination .page-numbers.current {
+    text-decoration: none;
+}
+
+.em.em-item.em-item-single>section {
+    min-height: 300px;
+    padding: 10px 50px;
 }
