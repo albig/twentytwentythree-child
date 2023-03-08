@@ -184,3 +184,9 @@ h1, h2, h3, h4, h5, h6 {
 p.alignwide.wp-block-site-tagline {
     display: contents;
 }
+
+@media (max-width: 360px) {
+    h2.has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important
+    }
+}
