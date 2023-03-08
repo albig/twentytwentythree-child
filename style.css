@@ -117,8 +117,31 @@ h1, h2, h3, h4, h5, h6 {
 /* make images in kalender list view a little smaller */
 .em.em-item .em-item-image img,
 .em.em-list .em-item .em-item-image img {
-    width: 80%;
-    padding: 0 10px 0 30px;
+    width: 250px;
+    padding: 0 10px 0 20px;
+}
+.em.em-list .em-item {
+    grid-template-columns: minmax(0,1fr) 3fr;
+}
+
+/* single view event */
+.em.em-item.em-item-single .em-item-header {
+    grid-template-columns: minmax(0,1fr) 3fr;
+    display: grid;
+    gap: 0px;
+}
+
+.em.em-item.em-item-single .em-item-image {
+    flex: 1 0 300px;
+    order: 1;
+}
+.em.em-item.em-item-single .em-item-image img {
+    border: none;
+}
+
+.em.em-item.em-item-single .em-item-meta {
+    border-left: 4px solid var(--default-border);
+    padding-left: 30px;
 }
 
 /* make pagination a bit nicer */
