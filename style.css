@@ -124,6 +124,20 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: minmax(0,1fr) 3fr;
 }
 
+@media (max-width: 600px) {
+    .em.em-item .em-item-image img,
+    .em.em-list .em-item .em-item-image img {
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .em.em-list.size-small .em-item {
+        padding: 0px;
+    }
+}
+
 /* single view event */
 .em.em-item.em-item-single .em-item-header {
     grid-template-columns: minmax(0,1fr) 3fr;
@@ -164,4 +178,9 @@ h1, h2, h3, h4, h5, h6 {
 .em.em-item.em-item-single>section {
     min-height: 300px;
     padding: 10px 50px;
+}
+
+/* fix subtitle on mobile */
+p.alignwide.wp-block-site-tagline {
+    display: contents;
 }
