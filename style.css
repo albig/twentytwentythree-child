@@ -45,6 +45,11 @@ footer {
 	width: 100%;
 }
 
+
+.alignleft {
+    float: left
+}
+
 .alignright {
 	float: right;
 }
@@ -185,7 +190,7 @@ p.alignwide.wp-block-site-tagline {
     display: contents;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 390px) {
     h2.has-x-large-font-size {
         font-size: var(--wp--preset--font-size--large) !important
     }
