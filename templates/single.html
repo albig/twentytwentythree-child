@@ -3,16 +3,22 @@
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}},"className":"dadumb"} -->
 <main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50)"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group alignwide"><!-- wp:post-featured-image {"overlayColor":"contrast","dimRatio":50,"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50","top":"calc(-1 * var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dspacing\u002d\u002d50))"}}}} /-->
 
-<!-- wp:post-title {"level":1,"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} /--></div>
+<div class="wp-block-cover is-light has-custom-content-position is-position-top-center" style="margin-top:100px;margin-bottom:0;min-height:280px">
+    <span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-0 has-background-dim"></span>
+    <div class="wp-block-cover__inner-container"><!-- wp:post-title {"textAlign":"center","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"},"margin":{"top":"var:preset|spacing|40","right":"0","bottom":"var:preset|spacing|40","left":"0"}},"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700"}},"backgroundColor":"primary","textColor":"contrast","fontSize":"x-large"} /-->
+    </div>
+</div>
+
 <!-- /wp:group -->
 
-<!-- wp:post-content {"align":"wide","layout":{"type":"default"}} /--></div>
+<!-- wp:post-content {"align":"wide","layout":{"type":"default"}} /-->
+</div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:template-part {"slug":"post-meta","align":"wide"} /-->
+<div class="wp-block-group">
+    <!-- wp:template-part {"slug":"post-meta","align":"wide"} /-->
 
 <!-- wp:group {"layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group"></div>
