@@ -198,7 +198,20 @@ p.alignwide.wp-block-site-tagline {
 
 
 /* list last changes plugin */
+.list-last-changes > p {
+    padding-right: 20px;
+}
 .list-last-changes ul {
     list-style: none;
     display: contents;
+}
+
+@media (max-width: 600px) {
+    .list-last-changes {
+        padding-left: 0;
+    }
+    .list-last-changes ul {
+        display: block;
+        padding-left: 10px;
+    }
 }
