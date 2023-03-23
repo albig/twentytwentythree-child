@@ -1,37 +1,47 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--70)">
-	<!-- wp:heading {"level":1,"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}}} -->
-	<h1 class="alignwide" style="margin-bottom:var(--wp--preset--spacing--60)">Mindblown: a blog about philosophy.</h1>
-	<!-- /wp:heading -->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:cover {"url":"https://neueseite.xn\u002d\u002dlbtau-jua.de/wp-content/uploads/2023/01/X-header-bar-000-oben-1.png","id":2078,"dimRatio":0,"minHeight":280,"contentPosition":"top center","isDark":false,"style":{"spacing":{"margin":{"top":"0px","bottom":"0"}}}} -->
+<div class="wp-block-cover is-light has-custom-content-position is-position-top-center" style="margin-top:0px;margin-bottom:0;min-height:280px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2078" alt="" src="https://neueseite.xn--lbtau-jua.de/wp-content/uploads/2023/01/X-header-bar-000-oben-1.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40","top":"var:preset|spacing|40","right":"var:preset|spacing|40","left":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase"}},"backgroundColor":"primary","textColor":"contrast","fontSize":"x-large"} -->
+<h2 class="has-text-align-center has-contrast-color has-primary-background-color has-text-color has-background has-x-large-font-size" style="margin-top:var(--wp--preset--spacing--40);margin-right:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40);margin-left:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30);font-style:normal;font-weight:700;text-transform:uppercase">Löbtop Blog</h2>
+<!-- /wp:heading --></div></div>
+<!-- /wp:cover -->
 
-	<!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":3},"align":"wide","layout":{"type":"constrained"}} -->
-	<div class="wp-block-query alignwide">
-		<!-- wp:post-template {"align":"wide"} -->
-			<!-- wp:post-featured-image {"isLink":true,"width":"100%","height":"max(15vw, 30vh)","align":"wide"} /-->
-			<!-- wp:post-title {"isLink":true} /-->
-			<!-- wp:post-excerpt /-->
-			<!-- wp:post-date {"isLink":true} /-->
+<!-- wp:query {"queryId":2,"query":{"perPage":"10","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"displayLayout":{"type":"list","columns":3},"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-query alignwide"><!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
 
-			<!-- wp:spacer {"height":"var(--wp--preset--spacing--40)"} -->
-			<div style="height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
-			<!-- /wp:spacer -->
-		<!-- /wp:post-template -->
+<!-- wp:query-pagination-numbers /-->
 
-		<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
-			<!-- wp:query-pagination-previous {"label":"Newer Posts"} /-->
-			<!-- wp:query-pagination-next {"label":"Older Posts"} /-->
-		<!-- /wp:query-pagination -->
-	</div>
-	<!-- /wp:query -->
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
 
-	<!-- wp:spacer {"height":"var(--wp--preset--spacing--60)"} -->
-	<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
+<!-- wp:post-template {"align":"wide"} -->
+<!-- wp:post-featured-image {"isLink":true,"width":"250px","align":"left","style":{"spacing":{"margin":{"right":"var:preset|spacing|30"}}}} /-->
 
-	<!-- wp:pattern {"slug":"twentytwentythree/cta"} /-->
-</main>
+<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} /-->
+
+<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:post-excerpt {"style":{"typography":{"fontSize":"1.5rem"}}} /-->
+
+<!-- wp:read-more /--></div>
+<!-- /wp:group -->
+
+<!-- wp:post-date {"isLink":true} /-->
+
+<!-- wp:spacer {"height":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dspacing\u002d\u002d40)"} -->
+<div style="height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query --></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
