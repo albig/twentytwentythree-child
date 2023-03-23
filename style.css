@@ -195,3 +195,10 @@ p.alignwide.wp-block-site-tagline {
         font-size: var(--wp--preset--font-size--large) !important
     }
 }
+
+
+/* list last changes plugin */
+.list-last-changes ul {
+    list-style: none;
+    display: contents;
+}
