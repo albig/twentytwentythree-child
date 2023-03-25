@@ -205,6 +205,14 @@ p.alignwide.wp-block-site-tagline {
     list-style: none;
     display: contents;
 }
+/* shorten long titles*/
+.list-last-changes > ul > li > a {
+    display: block;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
 
 @media (max-width: 600px) {
     .list-last-changes {
