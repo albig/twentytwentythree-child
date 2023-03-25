@@ -208,10 +208,14 @@ p.alignwide.wp-block-site-tagline {
 /* shorten long titles*/
 .list-last-changes > ul > li > a {
     display: block;
-    max-width: 250px;
+    max-width: 280px;
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
+}
+span.list_last_changes_date {
+    padding-left: 0;
+    font-size: 80%
 }
 
 @media (max-width: 600px) {
