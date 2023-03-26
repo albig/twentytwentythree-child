@@ -34,6 +34,10 @@ footer {
     height: 50px;
 }
 
+/* add hyphens to headings */
+h2, h3, h4 {
+    hyphens: auto;
+}
 
 .wp-block-site-tagline {
 	position: relative;
@@ -208,10 +212,11 @@ p.alignwide.wp-block-site-tagline {
 .list-last-changes ul > li {
     padding: 0 10px;
 }
+
 /* shorten long titles*/
 .list-last-changes > ul > li > a {
     display: block;
-    max-width: 280px;
+    max-width: 220px;
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
@@ -221,12 +226,23 @@ span.list_last_changes_date {
     font-size: 80%
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .list-last-changes {
         padding-left: 0;
     }
     .list-last-changes ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
         display: block;
+        padding-left: 10px;
+    }
+}
+@media (max-width: 450px) {
+    .list-last-changes ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
         padding-left: 10px;
     }
 }
