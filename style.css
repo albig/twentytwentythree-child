@@ -210,13 +210,13 @@ p.alignwide.wp-block-site-tagline {
     display: contents;
 }
 .list-last-changes ul > li {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 /* shorten long titles*/
 .list-last-changes > ul > li > a {
     display: block;
-    max-width: 220px;
+    max-width: 210px;
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
