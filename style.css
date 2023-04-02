@@ -197,6 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 .em-osm-map {
     z-index: 10;
     margin-top: 20px;
+    width: 80vh !important;
 }
 
 /* fix subtitle on mobile */
