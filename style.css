@@ -189,6 +189,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 50px;
 }
 
+/* event single location page */
+.em.em-item.em-item-single .em-item-header {
+    display: flex;
+}
+
+#em-osm-single-map-container-L1 {
+    z-index: 10;
+    margin-top: 20px;
+}
+
 /* fix subtitle on mobile */
 p.alignwide.wp-block-site-tagline {
     display: contents;
