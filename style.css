@@ -147,6 +147,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+@media (max-width: 1000px) {
+    .em.em-item .em-item-image img,
+    .em.em-list .em-item .em-item-image img {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
 /* single view event */
 .em.em-item.em-item-single .em-item-header {
     grid-template-columns: minmax(0,1fr) 3fr;
@@ -210,7 +218,6 @@ p.alignwide.wp-block-site-tagline {
         font-size: var(--wp--preset--font-size--large) !important
     }
 }
-
 
 /* list last changes plugin */
 .list-last-changes > p {
