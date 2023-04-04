@@ -126,11 +126,19 @@ h1, h2, h3, h4, h5, h6 {
 /* make images in kalender list view a little smaller */
 .em.em-item .em-item-image img,
 .em.em-list .em-item .em-item-image img {
-    width: 250px;
-    padding: 0 10px 0 20px;
+    padding: 30px;
 }
 .em.em-list .em-item {
     grid-template-columns: minmax(0,1fr) 3fr;
+}
+
+@media (max-width: 1000px) {
+    .em.em-item .em-item-image img,
+    .em.em-list .em-item .em-item-image img {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -140,18 +148,11 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px;
     }
 
     .em.em-list.size-small .em-item {
         padding: 0px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .em.em-item .em-item-image img,
-    .em.em-list .em-item .em-item-image img {
-        width: 100%;
-        padding-left: 0;
     }
 }
 
@@ -173,6 +174,10 @@ h1, h2, h3, h4, h5, h6 {
 .em.em-item.em-item-single .em-item-meta {
     border-left: 4px solid var(--default-border);
     padding-left: 30px;
+}
+
+.em.em-item.em-item-single > section.em-location-content {
+    min-height: unset;
 }
 
 @media (max-width: 600px) {
@@ -206,6 +211,10 @@ h1, h2, h3, h4, h5, h6 {
 /* event single location page */
 .em.em-item.em-item-single .em-item-header {
     display: flex;
+}
+
+.em-location-events > div {
+    padding-left: 20px;
 }
 
 .em-osm-map {
