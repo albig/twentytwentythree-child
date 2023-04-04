@@ -217,7 +217,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 20px;
 }
 
-.em-location-single .em.em-item.em-item-single .em-item-image img {
+
+.em.em-item.em-location-single .em-item-image img {
     width: 90%;
     margin-top: 65px;
 }
