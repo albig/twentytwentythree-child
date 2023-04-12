@@ -126,7 +126,8 @@ h1, h2, h3, h4, h5, h6 {
 /* make images in kalender list view a little smaller */
 .em.em-item .em-item-image img,
 .em.em-list .em-item .em-item-image img {
-    width: 100%;
+    max-width: 100%;
+    width: auto;
 }
 .em.em-list .em-item {
     grid-template-columns: minmax(0,1fr) 3fr;
