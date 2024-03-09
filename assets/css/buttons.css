@@ -1,0 +1,21 @@
+.hidden {
+    display: none;
+}
+
+.btn-open .wp-block-button__link {
+    padding: 2px 2px 0 7px;
+  }
+
+  .btn-open .wp-block-button__link svg {
+    position: relative;
+    top: 3px;
+    left: -2px;
+    fill: currentColor;
+  }
+
+  .btn-close {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+  }
