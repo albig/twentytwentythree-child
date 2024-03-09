@@ -419,6 +419,10 @@ header .wp-block-template-part {
     display: none;
 }
 
+.mobile-search {
+    display: none;
+}
+
 @media (max-width: 600px) {
     .mobile-search {
         display: block;
