@@ -47,10 +47,18 @@ h4 {
     hyphens: auto;
 }
 
+/* fix subtitle on mobile */
 .wp-block-site-tagline {
+    line-height: 1;
+    display: inherit;
+}
+
+@media (min-width: 600px) {
+    .wp-block-site-tagline {
     position: relative;
     top: 20px;
     left: 20px;
+    }
 }
 
 .wp-block-cover {
@@ -113,6 +121,10 @@ h6 {
 @media (max-width: 600px) {
     .wp-block-cover__inner-container.is-layout-constrained.wp-block-cover-is-layout-constrained {
         margin-top: 20px !important;
+    }
+    /* fix subtitle on mobile */
+    body .is-layout-constrained > .alignleft {
+        margin-inline-end: 0.5em
     }
 }
 
@@ -241,11 +253,6 @@ h6 {
     z-index: 10;
     margin-top: 20px;
     width: 100% !important;
-}
-
-/* fix subtitle on mobile */
-p.alignwide.wp-block-site-tagline {
-    display: contents;
 }
 
 @media (max-width: 390px) {
