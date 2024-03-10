@@ -2,7 +2,15 @@
 
 /* enqueue scripts and style from parent theme */
 function twentytwentythree_styles() {
-	wp_enqueue_style( 'twentytwentythree-child-style', get_stylesheet_uri() );
+	$theme_version = wp_get_theme()->get( 'Version' );
+	$version_string = is_string( $theme_version ) ? $theme_version : false;
+	wp_register_style(
+		'twentytwentythree-child-style',
+		get_stylesheet_uri(),
+		array(),
+		$version_string
+	);
+	wp_enqueue_style( 'twentytwentythree-child-style' );
 
 	wp_enqueue_script( 'twentytwentythree-child-js-pagetotop',  get_stylesheet_directory_uri() . '/assets/js/pagetotop.js', array(), false, true );
 	wp_enqueue_script( 'twentytwentythree-child-js-navigation',  get_stylesheet_directory_uri() . '/assets/js/navigation.js', array(), false, true );

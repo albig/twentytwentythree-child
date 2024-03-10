@@ -1,12 +1,14 @@
 /*
- * Theme Name: Childtheme Löbtop e.V. (twentytwentythree)
- * Description: Ein paar Gestaltungsanpassungen
- * Author: Alexander Bigga
- * Author URI: https://loebtop.de
- * Template: twentytwentythree
- * Version: 1.0
- * Tags:
- * */
+Theme Name: Childtheme Löbtop e.V. (twentytwentythree)
+Description: Ein paar Gestaltungsanpassungen
+Author: Alexander Bigga
+Author URI: https://loebtop.de
+Template: twentytwentythree
+Version: 1.1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: twentytwentythree-child
+*/
 
 .sticky-header {
     position: fixed;
