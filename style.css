@@ -79,15 +79,6 @@ h4 {
     max-width: 350px;
 }
 
-/* .wp-block-navigation .wp-block-navigation-item {
-    padding-right: 20px;
-} */
-
-/* remove white border from submenu */
-/* .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
-    border: none;
-} */
-
 #imPageToTop {
     display: none;
     position: fixed;
@@ -114,6 +105,19 @@ h4,
 h5,
 h6 {
     text-transform: none;
+}
+
+/* keep page title below header in all screens */
+@media (max-width: 600px) {
+    .wp-block-cover__inner-container.is-layout-constrained.wp-block-cover-is-layout-constrained {
+        margin-top: 20px !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+    .wp-block-cover__inner-container.is-layout-constrained.wp-block-cover-is-layout-constrained {
+        margin-top: 50px !important;
+    }
 }
 
 /* event styling */
@@ -306,6 +310,9 @@ span.list_last_changes_date {
     justify-content: center;
     gap: 0.4rem;
     width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
     padding: 1.3rem;
     position: absolute;
     background-color: white;
@@ -423,7 +430,8 @@ header .wp-block-template-part {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width:599px) {
+
     .mobile-search {
         display: block;
         width: 100%;
@@ -432,16 +440,6 @@ header .wp-block-template-part {
     #loebtop-search {
         display: none;
     }
-}
-
-
-
-/* .wp-block-navigation .wp-block-navigation-item {
-    padding-top: 10px;
-    padding-bottom: 10px;
-} */
-
-@media (max-width:599px) {
 
     /* avoid text-underline on active page */
     .wp-block-navigation a:where(:not(.wp-element-button)) {
@@ -451,6 +449,7 @@ header .wp-block-template-part {
     a:where(:not(.wp-element-button)) {
         font-size: var(--wp--preset--font-size--large);
     }
+
     .wp-block-navigation :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) {
         border: none;
     }
@@ -473,7 +472,7 @@ header .wp-block-template-part {
         border-top: 1px dotted #ccc;
     }
 
-    header .wp-block-navigation .wp-block-navigation-item.wp-block-navigation-submenu.ddl-active{
+    header .wp-block-navigation .wp-block-navigation-item.wp-block-navigation-submenu.ddl-active {
         border-top: 2px solid #ccc;
         border-bottom: 2px solid #ccc;
     }
