@@ -4,7 +4,7 @@ Description: Ein paar Gestaltungsanpassungen
 Author: Alexander Bigga
 Author URI: https://loebtop.de
 Template: twentytwentythree
-Version: 1.1.0
+Version: 1.1.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: twentytwentythree-child
@@ -143,7 +143,7 @@ body .is-layout-constrained > .alignleft {
 }
 
 
-.wp-block-query-pagination span,
+.wp-block-query-pagination .wp-block-query-pagination-numbers span,
 .wp-block-query-pagination a {
     font-size: var(--wp--preset--font-size--large);
     padding: 5px 20px;
@@ -328,15 +328,15 @@ span.list_last_changes_date {
 }
 
 /* Search Modal */
+#loebtop-search > .modal {
+    position: fixed;
+    top: 100px;
+    width: 90%;
+    right: 5%;
+}
+
 .modal {
-    display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
-    gap: 0.4rem;
-    width: 100%;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: fill-available;
     padding: 1.3rem;
     position: absolute;
     background-color: white;
@@ -507,7 +507,7 @@ header .wp-block-template-part {
         width: auto;
         position: absolute;
         border: 1px solid #ccc;
-        margin: 15px 5px;
+        margin: 5px 5px;
         padding: 6px;
         right: 0;
         top: 4px;

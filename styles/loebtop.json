@@ -139,10 +139,13 @@
 				}
 			},
 			"core/post-date": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--preset--color--contrast)"
+							"text": "var(--wp--preset--color--primary)"
 						},
 						"typography": {
 							"letterSpacing": "0.09rem",

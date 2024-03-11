@@ -17,8 +17,7 @@
         modal.classList.add("hidden");
         overlay.classList.add("hidden");
         // When the modal is hidden, we want to remain at the top of the scroll position
-        document.body.style.position = '';
-        document.body.style.top = '';
+        document.body.style = '';
     };
 
     // close the modal when the close button and overlay is clicked
@@ -34,14 +33,16 @@
 
     // open modal function
     const openModal = function () {
+        let scrollToTop = window.scrollY;
         modal.classList.remove("hidden");
         overlay.classList.remove("hidden");
         // When the modal is shown, we want a fixed body
         document.body.style.position = 'fixed';
-        document.body.style.top = `-${window.scrollY}px`;
+        document.body.style.top = '-' + scrollToTop + 'px';
+        document.body.style.left = '0';
+        document.body.style.right = '0';
     };
     // open modal event
     openModalBtn.addEventListener("click", openModal);
-
 
 }());
