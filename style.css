@@ -19,9 +19,9 @@ Text Domain: twentytwentythree-child
 }
 
 /* make links same size as normal text  */
-p a:where(:not(.wp-element-button)) {
+/* p a:where(:not(.wp-element-button)) {
     font-size: var(--wp--preset--font-size--large);
-}
+} */
 
 
 @media (max-width: 600px) {
@@ -520,4 +520,9 @@ header .wp-block-template-part {
     header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-icon {
         display: block;
     }
+}
+
+
+h3.wp-block-post-title {
+    font-size: 120%;
 }

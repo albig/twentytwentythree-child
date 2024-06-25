@@ -1,5 +1,7 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.1/theme.json",
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+	"version": 3,
+	"title": "Loebtop",
 	"customTemplates": [
 		{
 			"name": "blank",
@@ -555,8 +557,31 @@
 				}
 			},
 			"core/post-excerpt": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						},
+						"typography": {
+							"textDecoration": "underline"
+						},
+						":hover": {
+							"typography": {
+								"textDecoration": "none"
+							}
+						}
+					}
+				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
+			"core/read-more": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"typography": {
+					"textDecoration": "underline"
 				}
 			},
 			"core/post-terms": {
@@ -897,6 +922,5 @@
 			"name": "post-meta",
 			"title": "Beitrags-Meta"
 		}
-	],
-	"version": 2
+	]
 }
