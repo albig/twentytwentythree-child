@@ -526,3 +526,8 @@ header .wp-block-template-part {
 h3.wp-block-post-title {
     font-size: 120%;
 }
+
+/* force word wrap of long urls in post excerpt */
+.wp-block-post-excerpt__excerpt {
+    word-wrap: break-word;
+}
