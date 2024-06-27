@@ -528,6 +528,31 @@ h3.wp-block-post-title {
 }
 
 /* force word wrap of long urls in post excerpt */
+.wp-block-post-content,
 .wp-block-post-excerpt__excerpt {
     word-wrap: break-word;
+}
+
+/* Give linked headings on frontpage same appearance than ordinary headings */
+h2.wp-block-heading a {
+    text-decoration: none;
+    color: var(--wp--preset--color--primary);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    font-size: clamp(2.625rem, calc(2.625rem + ((1vw - 0.48rem) * 8.4135)), 3.25rem);
+    line-height: 1.2;
+}
+h2.wp-block-heading a:hover {
+    text-decoration: underline;
+}
+
+h2.wp-block-post-title a {
+    color: var(--wp--preset--color--primary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: var(--wp--preset--font-family--barlow-condensed);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--wp--preset--font-size--large)
 }
