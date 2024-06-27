@@ -19,9 +19,9 @@ Text Domain: twentytwentythree-child
 }
 
 /* make links same size as normal text  */
-/* p a:where(:not(.wp-element-button)) {
+p a:where(:not(.wp-element-button)) {
     font-size: var(--wp--preset--font-size--large);
-} */
+}
 
 
 @media (max-width: 600px) {
