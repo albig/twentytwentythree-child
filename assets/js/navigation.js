@@ -25,4 +25,35 @@
         subMenus[i].addEventListener("click", openSubmenu);
     }
 
+    document.addEventListener("DOMContentLoaded", function () {
+
+    const header = document.querySelector(".sticky-header");
+
+    let lastScroll = 0;
+
+    window.addEventListener("scroll", () => {
+
+        const currentScroll = window.pageYOffset;
+
+        /* SHRINK HEADER */
+
+        if (currentScroll > 120) {
+            header.classList.add("is-shrunk");
+        } else {
+            header.classList.remove("is-shrunk");
+            header.classList.remove("is-hidden");
+        }
+
+        /* HIDE ON SCROLL DOWN */
+        if (currentScroll > lastScroll && currentScroll > 800) {
+            header.classList.add("is-hidden");
+        }
+        else {
+            header.classList.remove("is-hidden");
+        }
+
+        lastScroll = currentScroll;
+
+    });
+});
 }());
