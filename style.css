@@ -137,7 +137,7 @@ Text Domain: twentytwentythree-child
 .wp-site-blocks .wp-block-cover.is-position-top-center {
   margin-top: 110px !important;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .wp-site-blocks .wp-block-cover.is-position-top-center {
     margin-top: 51px !important;
   }
@@ -152,7 +152,7 @@ Text Domain: twentytwentythree-child
 }
 @media (max-width: 600px) {
   .sticky-header {
-    height: 86px;
+    height: 86px !important;
     padding: 0 20px;
   }
 }
@@ -217,7 +217,15 @@ Text Domain: twentytwentythree-child
     scale: 150%;
   }
 }
-@media (max-width: 599px) {
+.sticky-header > .wp-block-group:first-child .wp-block-navigation__container {
+  row-gap: normal;
+}
+@media (max-width: 700px) {
+  .sticky-header > .wp-block-group:last-child .wp-block-site-tagline {
+    margin-left: 6rem !important;
+  }
+}
+@media (max-width: 600px) {
   .sticky-header > .wp-block-group:last-child {
     height: 40%;
   }
@@ -225,7 +233,7 @@ Text Domain: twentytwentythree-child
     margin-left: 6rem !important;
     margin-right: 1rem !important;
     position: relative;
-    top: -38px;
+    top: -23px;
     line-height: 28px;
   }
 }
@@ -244,7 +252,7 @@ Text Domain: twentytwentythree-child
     transform: scale(0.5);
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .sticky-header.is-shrunk .custom-logo {
     height: 70px;
   }
@@ -257,16 +265,16 @@ Text Domain: twentytwentythree-child
     display: none;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .sticky-header.is-shrunk > .wp-block-group:last-child {
     height: 40%;
   }
   .sticky-header.is-shrunk > .wp-block-group:last-child .wp-block-site-tagline {
-    margin-left: 4rem !important;
-    margin-right: 1rem !important;
+    margin-left: 5rem !important;
+    margin-right: 1.5rem !important;
     position: relative;
     top: -30px;
-    letter-spacing: 0px !important;
+    letter-spacing: 1px !important;
     line-height: 1.4rem;
   }
 }
@@ -352,10 +360,13 @@ body .is-layout-constrained > .alignleft {
 }
 
 /* Search Modal */
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   #loebtop-search {
     display: none;
   }
+}
+#loebtop-search .btn-open {
+  margin-right: 15px;
 }
 #loebtop-search .btn-open .wp-block-button__link {
   padding: 2px 2px 0 7px;
@@ -447,7 +458,7 @@ body .is-layout-constrained > .alignleft {
   display: none;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .mobile-search {
     display: block;
     width: 100%;

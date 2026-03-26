@@ -14,3 +14,10 @@ $custom-colors: (
     gray-500: #6b7a80,
     white: #fff
 );
+
+$mybreakpoints: (
+    "md": "600px"
+);
+
+$breakpoint-md: map.get($mybreakpoints, "md");
+

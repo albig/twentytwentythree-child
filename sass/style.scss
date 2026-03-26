@@ -11,7 +11,6 @@ Text Domain: twentytwentythree-child
 */
 
 @use "variables";
-
 @use "events-manager";
 
 .admin-bar .wp-site-blocks .sticky-header {
@@ -23,10 +22,11 @@ Text Domain: twentytwentythree-child
     padding-bottom: 0;
 
     .wp-block-cover {
+
         &.is-position-top-center {
             margin-top: 110px !important;
 
-            @media (max-width: 599px) {
+            @media (max-width: variables.$breakpoint-md) {
                 margin-top: 51px !important;
             }
         }
@@ -38,17 +38,18 @@ Text Domain: twentytwentythree-child
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     height: 146px;
-    @media (max-width: 600px) {
-        height: 86px;
+
+    @media (max-width: variables.$breakpoint-md) {
+        height: 86px !important;
         padding: 0 20px;
     }
 
-    background: rgba(255,255,255,0.96);
-    transition: height .35s ease,
-                transform .35s ease,
-                box-shadow .35s ease;
+    background: rgba(255, 255, 255, 0.96);
+    transition:
+        height 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
     z-index: 1000;
 
 
@@ -67,22 +68,25 @@ Text Domain: twentytwentythree-child
         top: 48px;
         position: relative;
 
-        @media (max-width: 600px) {
+        @media (max-width: variables.$breakpoint-md) {
             top: 24px;
         }
+
         .custom-logo {
             height: auto;
             padding-left: 15px;
+
             @media (max-width: 1000px) {
                 height: 100px;
             }
-            @media (max-width: 600px) {
+
+            @media (max-width: variables.$breakpoint-md) {
                 padding-left: 0;
                 height: 80px;
             }
             width: auto;
             max-width: fit-content;
-            transition: transform .35s ease, height .35s ease;
+            transition: transform 0.35s ease, height 0.35s ease;
         }
 
     }
@@ -93,7 +97,7 @@ Text Domain: twentytwentythree-child
         &:first-child {
             padding-top: 28px;
 
-            @media (max-width: 600px) {
+            @media (max-width: variables.$breakpoint-md) {
                 height: 40%;
                 width: 100%;
                 justify-content: space-between;
@@ -102,19 +106,35 @@ Text Domain: twentytwentythree-child
                     justify-content: flex-end;
 
                     &.wp-block-navigation {
+
                         button {
+
                             svg {
                                 scale: 150%;
                             }
                         }
+
+
                     }
                 }
             }
+
+            .wp-block-navigation__container {
+                row-gap: normal;
+            }
+
         }
 
         &:last-child {
 
-            @media (max-width: 599px) {
+            @media (max-width: 700px) {
+
+                .wp-block-site-tagline {
+                    margin-left: 6rem !important;
+                }
+            }
+
+            @media (max-width: variables.$breakpoint-md) {
 
                 height: 40%;
 
@@ -122,7 +142,7 @@ Text Domain: twentytwentythree-child
                     margin-left: 6rem !important;
                     margin-right: 1rem !important;
                     position: relative;
-                    top: -38px;
+                    top: -23px;
                     line-height: 28px;
                 }
 
@@ -134,7 +154,7 @@ Text Domain: twentytwentythree-child
     &.is-shrunk {
 
         height: 60px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 
         &.is-hidden {
             transform: translateY(-100%);
@@ -145,10 +165,12 @@ Text Domain: twentytwentythree-child
         }
 
         .custom-logo {
-            @media (min-width: 600px) {
+
+            @media (min-width: variables.$breakpoint-md) {
                 transform: scale(0.5);
             }
-            @media (max-width: 599px) {
+
+            @media (max-width: variables.$breakpoint-md) {
                 height: 70px;
             }
         }
@@ -159,20 +181,20 @@ Text Domain: twentytwentythree-child
 
                 height: 60%;
 
-                @media (min-width: 600px) {
+                @media (min-width: variables.$breakpoint-md) {
                     display: none;
                 }
 
-                @media (max-width: 599px) {
+                @media (max-width: variables.$breakpoint-md) {
 
                     height: 40%;
 
                     .wp-block-site-tagline {
-                        margin-left: 4rem !important;
-                        margin-right: 1rem !important;
+                        margin-left: 5rem !important;
+                        margin-right: 1.5rem !important;
                         position: relative;
                         top: -30px;
-                        letter-spacing: 0px !important;
+                        letter-spacing: 1px !important;
                         line-height: 1.4rem;
                     }
 
@@ -183,13 +205,14 @@ Text Domain: twentytwentythree-child
 }
 
 @media (max-width: 390px) {
+
     h2.has-x-large-font-size {
-        font-size: var(--wp--preset--font-size--large) !important
+        font-size: var(--wp--preset--font-size--large) !important;
     }
 }
 
 /* list last changes plugin */
-.list-last-changes>p {
+.list-last-changes > p {
     padding-right: 20px;
 }
 
@@ -198,12 +221,12 @@ Text Domain: twentytwentythree-child
     display: contents;
 }
 
-.list-last-changes ul>li {
+.list-last-changes ul > li {
     padding: 0 5px;
 }
 
 /* shorten long titles*/
-.list-last-changes>ul>li>a {
+.list-last-changes > ul > li > a {
     display: block;
     max-width: 210px;
     white-space: nowrap;
@@ -213,10 +236,11 @@ Text Domain: twentytwentythree-child
 
 span.list_last_changes_date {
     margin-left: 0;
-    font-size: 80%
+    font-size: 80%;
 }
 
 @media (max-width: 800px) {
+
     .list-last-changes {
         padding-left: 0;
     }
@@ -231,6 +255,7 @@ span.list_last_changes_date {
 }
 
 @media (max-width: 450px) {
+
     .list-last-changes ul {
         columns: 1;
         -webkit-columns: 1;
@@ -241,11 +266,12 @@ span.list_last_changes_date {
 
 /* fix subtitle on mobile */
 body .is-layout-constrained > .alignleft {
-    margin-inline-end: 0.5em
+    margin-inline-end: 0.5em;
 }
 
 /* keep page title below header in all screens */
-@media (max-width: 600px) {
+@media (max-width: variables.$breakpoint-md) {
+
     .wp-block-cover__inner-container.is-layout-constrained.wp-block-cover-is-layout-constrained {
         margin-top: 20px !important;
 
@@ -256,7 +282,8 @@ body .is-layout-constrained > .alignleft {
     }
 }
 
-@media (min-width: 600px) and (max-width: 1100px) {
+@media (min-width: variables.$breakpoint-md) and (max-width: 1100px) {
+
     .wp-block-cover__inner-container.is-layout-constrained.wp-block-cover-is-layout-constrained {
         margin-top: 50px !important;
     }
@@ -273,11 +300,14 @@ body .is-layout-constrained > .alignleft {
 /* Search Modal */
 #loebtop-search {
 
-    @media (max-width:599px) {
+    @media (max-width: variables.$breakpoint-md) {
         display: none;
     }
 
     .btn-open {
+
+        margin-right: 15px;
+
         .wp-block-button__link {
             padding: 2px 2px 0 7px;
 
@@ -285,7 +315,7 @@ body .is-layout-constrained > .alignleft {
                 position: relative;
                 top: 3px;
                 left: -2px;
-                fill: currentColor;
+                fill: currentcolor;
             }
         }
     }
@@ -299,9 +329,8 @@ body .is-layout-constrained > .alignleft {
     }
 
     .modal {
-        position: fixed;
         top: 100px;
-        width: 90vW;
+        width: 90vw;
         right: 5%;
 
         justify-content: center;
@@ -384,7 +413,7 @@ body .is-layout-constrained > .alignleft {
     display: none;
 }
 
-@media (max-width:599px) {
+@media (max-width: variables.$breakpoint-md) {
 
     .mobile-search {
         display: block;
@@ -402,7 +431,7 @@ body .is-layout-constrained > .alignleft {
 
     .has-modal-open .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
     .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
-        row-gap: 0px;
+        row-gap: 0;
         width: 100%;
     }
 
@@ -481,7 +510,7 @@ h2.wp-block-post-title a {
     font-family: var(--wp--preset--font-family--barlow-condensed);
     font-style: normal;
     font-weight: 500;
-    font-size: var(--wp--preset--font-size--large)
+    font-size: var(--wp--preset--font-size--large);
 }
 
 #imPageToTop {
@@ -500,5 +529,5 @@ h2.wp-block-post-title a {
 
 footer {
     margin-block-start: 0;
-    background-color: var(--wp--preset--color--base)
+    background-color: var(--wp--preset--color--base);
 }
