@@ -14,7 +14,7 @@ Text Domain: twentytwentythree-child
 .em.em-list .em-item .em-item-info h3.em-item-title a {
   color: var(--wp--preset--color--primary);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .em.em-list .em-item .em-item-info .em-item-meta {
@@ -50,14 +50,14 @@ Text Domain: twentytwentythree-child
     margin-top: 20px;
   }
   .em.em-list.size-small .em-item {
-    padding: 0px;
+    padding: 0;
   }
 }
 /* single view event */
 .em.em-item.em-item-single .em-item-header {
   grid-template-columns: minmax(0, 1fr) 3fr;
   display: grid;
-  gap: 0px;
+  gap: 0;
 }
 
 .em.em-item.em-item-single .em-item-image {
@@ -89,7 +89,7 @@ Text Domain: twentytwentythree-child
   --color-hover: var(--wp--preset--color--primary);
   letter-spacing: 2.5px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .em .em-pagination .page-numbers {
@@ -147,7 +147,6 @@ Text Domain: twentytwentythree-child
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   height: 146px;
 }
 @media (max-width: 600px) {
@@ -233,7 +232,7 @@ Text Domain: twentytwentythree-child
     margin-left: 6rem !important;
     margin-right: 1rem !important;
     position: relative;
-    top: -23px;
+    top: -40px;
     line-height: 28px;
   }
 }
@@ -270,12 +269,8 @@ Text Domain: twentytwentythree-child
     height: 40%;
   }
   .sticky-header.is-shrunk > .wp-block-group:last-child .wp-block-site-tagline {
-    margin-left: 5rem !important;
     margin-right: 1.5rem !important;
     position: relative;
-    top: -30px;
-    letter-spacing: 1px !important;
-    line-height: 1.4rem;
   }
 }
 
@@ -375,7 +370,7 @@ body .is-layout-constrained > .alignleft {
   position: relative;
   top: 3px;
   left: -2px;
-  fill: currentColor;
+  fill: currentcolor;
 }
 #loebtop-search .btn-close {
   transform: translate(10px, -20px);
@@ -385,9 +380,8 @@ body .is-layout-constrained > .alignleft {
   font-size: 24px;
 }
 #loebtop-search .modal {
-  position: fixed;
   top: 100px;
-  width: 90vW;
+  width: 90vw;
   right: 5%;
   justify-content: center;
   padding: 1.3rem;
@@ -472,7 +466,7 @@ body .is-layout-constrained > .alignleft {
   }
   .has-modal-open .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
   .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
-    row-gap: 0px;
+    row-gap: 0;
     width: 100%;
   }
   header .wp-block-navigation .wp-block-navigation-item {
