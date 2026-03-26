@@ -41,7 +41,7 @@ Text Domain: twentytwentythree-child
     height: 146px;
 
     @media (max-width: variables.$breakpoint-md) {
-        height: 86px !important;
+        height: 81px;
         padding: 0 20px;
     }
 
@@ -52,7 +52,6 @@ Text Domain: twentytwentythree-child
         box-shadow 0.35s ease;
     z-index: 1000;
 
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,7 +60,6 @@ Text Domain: twentytwentythree-child
 
     &.hidden {
         display: none;
-
     }
 
     .wp-block-site-logo {
@@ -88,7 +86,6 @@ Text Domain: twentytwentythree-child
             max-width: fit-content;
             transition: transform 0.35s ease, height 0.35s ease;
         }
-
     }
 
     > .wp-block-group {
@@ -121,6 +118,13 @@ Text Domain: twentytwentythree-child
 
             .wp-block-navigation__container {
                 row-gap: normal;
+
+                .wp-block-navigation__submenu-icon {
+                    scale: 150%;
+                    margin-left: 0.6em;
+                    left: -5px;
+                    position: relative;
+                }
             }
 
         }
@@ -155,6 +159,10 @@ Text Domain: twentytwentythree-child
 
         height: 60px;
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+        @media (max-width: variables.$breakpoint-md) {
+            height: 62px;
+        }
 
         &.is-hidden {
             transform: translateY(-100%);

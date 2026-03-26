@@ -151,7 +151,7 @@ Text Domain: twentytwentythree-child
 }
 @media (max-width: 600px) {
   .sticky-header {
-    height: 86px !important;
+    height: 81px;
     padding: 0 20px;
   }
 }
@@ -219,6 +219,12 @@ Text Domain: twentytwentythree-child
 .sticky-header > .wp-block-group:first-child .wp-block-navigation__container {
   row-gap: normal;
 }
+.sticky-header > .wp-block-group:first-child .wp-block-navigation__container .wp-block-navigation__submenu-icon {
+  scale: 150%;
+  margin-left: 0.6em;
+  left: -5px;
+  position: relative;
+}
 @media (max-width: 700px) {
   .sticky-header > .wp-block-group:last-child .wp-block-site-tagline {
     margin-left: 6rem !important;
@@ -239,6 +245,11 @@ Text Domain: twentytwentythree-child
 .sticky-header.is-shrunk {
   height: 60px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 600px) {
+  .sticky-header.is-shrunk {
+    height: 62px;
+  }
 }
 .sticky-header.is-shrunk.is-hidden {
   transform: translateY(-100%);
