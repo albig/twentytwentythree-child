@@ -129,6 +129,16 @@ Text Domain: twentytwentythree-child
 .admin-bar .wp-site-blocks .sticky-header {
   top: 32px;
 }
+@media (max-width: 782px) {
+  .admin-bar .wp-site-blocks .sticky-header {
+    top: 46px;
+  }
+}
+@media (max-width: 782px) and (max-width: 600px) {
+  .admin-bar .wp-site-blocks .sticky-header.is-shrunk {
+    top: 0;
+  }
+}
 
 .wp-site-blocks {
   padding-top: 0;
@@ -181,7 +191,7 @@ Text Domain: twentytwentythree-child
   height: auto;
   padding-left: 15px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .sticky-header .wp-block-site-logo .custom-logo {
     height: 100px;
   }

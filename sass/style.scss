@@ -15,6 +15,20 @@ Text Domain: twentytwentythree-child
 
 .admin-bar .wp-site-blocks .sticky-header {
     top: 32px;
+
+    @media (max-width: 782px)  {
+        top: 46px;
+
+        &.is-shrunk {
+
+            @media (max-width: variables.$breakpoint-md) {
+                top:0;
+            }
+        }
+    }
+
+
+
 }
 
 .wp-site-blocks {
@@ -74,7 +88,7 @@ Text Domain: twentytwentythree-child
             height: auto;
             padding-left: 15px;
 
-            @media (max-width: 1000px) {
+            @media (max-width: 900px) {
                 height: 100px;
             }
 
