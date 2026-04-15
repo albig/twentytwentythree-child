@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"version": 2,
-	"title": "Loebtop",
+	"version": 3,
+	"title": "Loebtop2",
 	"settings": {
 		"color": {
 			"gradients": [
@@ -176,6 +176,11 @@
 						}
 					}
 				},
+				"typography": {
+					"fontSize": "clamp(2.625rem, calc(2.625rem + ((1vw - 0.48rem) * 8.4135)), 3.25rem)"
+				}
+			},
+			"core/post-excerpt": {
 				"typography": {
 					"fontSize": "clamp(2.625rem, calc(2.625rem + ((1vw - 0.48rem) * 8.4135)), 3.25rem)"
 				}

@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.1/theme.json",
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
 	"customTemplates": [
 		{
 			"name": "blank",
@@ -476,13 +476,13 @@
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var:preset|color|primary"
+							"text": "var(--wp--preset--color--primary)"
 						}
 					}
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|barlow-condensed",
-					"fontSize": "var:preset|font-size|large",
+					"fontFamily": "var(--wp--preset--font-family--barlow-condensed)",
+					"fontSize": "var(--wp--preset--font-size--large)",
 					"textTransform": "none"
 				}
 			},
@@ -555,6 +555,21 @@
 				}
 			},
 			"core/post-excerpt": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "none"
+							}
+						},
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						},
+						"typography": {
+							"textDecoration": "underline"
+						}
+					}
+				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
@@ -576,7 +591,7 @@
 			},
 			"core/post-title": {
 				"color": {
-					"text": "var:preset|color|primary"
+					"text": "var(--wp--preset--color--primary)"
 				},
 				"elements": {
 					"link": {
@@ -610,7 +625,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|barlow-condensed",
+					"fontFamily": "var(--wp--preset--font-family--barlow-condensed)",
 					"fontSize": "clamp(2.625rem, calc(2.625rem + ((1vw - 0.48rem) * 8.4135)), 3.25rem)",
 					"fontStyle": "normal",
 					"fontWeight": "500"
@@ -683,6 +698,11 @@
 			},
 			"core/quote": {
 				"border": {
+					"left": {
+						"color": "inherit",
+						"style": "solid",
+						"width": "1px"
+					},
 					"width": "1px"
 				},
 				"elements": {
@@ -700,15 +720,24 @@
 					}
 				}
 			},
+			"core/read-more": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"typography": {
+					"textDecoration": "underline"
+				}
+			},
 			"core/search": {
 				"typography": {
-					"fontSize": "var:preset|font-size|medium"
+					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			},
 			"core/separator": {
 				"color": {
 					"text": "var(--wp--preset--color--primary)"
-				}
+				},
+				"css": " &:not(.is-style-wide):not(.is-style-dots):not(.alignwide):not(.alignfull){width: 100px}"
 			},
 			"core/site-title": {
 				"border": {
@@ -757,15 +786,32 @@
 			}
 		},
 		"color": {
-			"background": "var:preset|color|contrast",
+			"background": "var(--wp--preset--color--contrast)",
 			"text": "var(--wp--preset--color--tertiary)"
 		},
 		"elements": {
 			"button": {
+				":active": {
+					"color": {
+						"background": "var(--wp--preset--color--secondary)",
+						"text": "var(--wp--preset--color--base)"
+					}
+				},
+				":focus": {
+					"color": {
+						"background": "var(--wp--preset--color--contrast)",
+						"text": "var(--wp--preset--color--base)"
+					}
+				},
 				":hover": {
 					"color": {
 						"background": "color-mix(in srgb,var(--wp--preset--color--base),#000 15%);",
 						"gradient": "none",
+						"text": "var(--wp--preset--color--contrast)"
+					}
+				},
+				":visited": {
+					"color": {
 						"text": "var(--wp--preset--color--contrast)"
 					}
 				},
@@ -869,7 +915,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|barlow-condensed",
+			"fontFamily": "var(--wp--preset--font-family--barlow-condensed)",
 			"fontSize": "24px",
 			"fontStyle": "normal",
 			"fontWeight": "400",
@@ -898,5 +944,6 @@
 			"title": "Beitrags-Meta"
 		}
 	],
+	"title": "Loebtop",
 	"version": 2
 }
